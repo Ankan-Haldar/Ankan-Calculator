@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #2d2d2d;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Calculator */
+
+.calculator {
+  width: 340px;
+  padding: 20px;
+  border-radius: 35px;
+  transition: 0.4s;
+}
+
+.calculator.light {
+  background: #ffffff;
+  color: #111;
+}
+
+.calculator.dark {
+  background: #0f0f0f;
+  color: white;
+}
+
+/* Top */
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-bar h3 {
+  font-weight: 600;
+}
+
+.theme-btn {
+  border: none;
+  background: transparent;
+  font-size: 22px;
+  cursor: pointer;
+  color: inherit;
+}
+
+/* Display */
+
+.display {
+  margin: 40px 0;
+  text-align: right;
+}
+
+.result {
+  font-size: 48px;
+  font-weight: bold;
+  word-wrap: break-word;
+}
+
+/* Buttons */
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.buttons button {
+  height: 60px;
+  border: none;
+  border-radius: 14px;
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.light .buttons button {
+  background: #f3f3f3;
+  color: #222;
+}
+
+.dark .buttons button {
+  background: #1f1f1f;
+  color: white;
+}
+
+.operator {
+  background: #1976d2 !important;
+  color: white !important;
+}
+
+.buttons button:hover {
+  transform: scale(1.05);
+}
